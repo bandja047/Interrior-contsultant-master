@@ -60,7 +60,7 @@ body{
 
 .main{
     margin:48px 38px;
-   
+    padding:100px;
     height: 60vh;
     
     justify-content: space-between;
