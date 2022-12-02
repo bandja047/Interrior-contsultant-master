@@ -1,0 +1,267 @@
+* {
+   box-sizing: border-box;
+   margin:0;
+   padding:0;
+}
+body{
+    background-color: #181719;
+    font-family: "Montserrat";
+    font-weight: 700;
+    color: white;
+}
+
+.navmenu{
+    height:50px;
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 12px;
+    color:white;
+    font-family: "Montserrat";
+    font-weight: 700;
+    
+}
+
+
+
+.dropbtn-close{
+    display: none;
+}
+
+.dropbtn{
+    display: none;
+}
+.nav-menu-item {
+    display:flex;
+
+   
+}
+.nav-menu-item a{
+
+    line-height: 1.8;
+    margin:4px;
+    font-weight: 500;
+    color:white;
+    cursor: pointer;
+    
+}
+
+.nav-menu-item a:hover{
+       
+    border-bottom: 1px solid white;
+    
+ }
+   
+.app-name{
+    border: 1px solid white;
+    padding:5px;
+}
+
+.main{
+    margin:48px 38px;
+   
+    height: 60vh;
+    
+    justify-content: space-between;
+   display: flex;
+   align-items: center;
+   
+  
+   
+}
+
+
+.content-right,.content-left{
+  
+    flex:1;
+}
+.content-right{
+    position: relative;
+}
+.content-right img{
+   
+    width:100%;
+    height: 100%;
+}
+
+.card{
+
+  
+    width: 200px;
+    
+    padding:12px;
+    position: absolute;
+    bottom:-30%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color: #181719;
+    z-index:2;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+	border-radius: 5px;
+}
+
+.card-profil{
+
+    display: flex;
+    align-items: center;
+}
+
+.card-profil img{
+    width:40px;
+    border-radius: 20px;
+
+}
+
+h3{
+    margin-left: 10px;
+    font-size:14px;
+}
+
+h4{
+    margin-left: 10px;
+    font-size:12px;
+}
+
+.profil-date{
+    font-size:12px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+h1{
+   margin:16px 0;
+   font-family: "Lora";
+   font-weight: 500;
+   color: white;
+}
+
+p, .button{
+   margin-bottom: 16px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 1.2;
+   font-size: 18px;
+  
+}
+
+
+
+.trait{
+    width: 10px;
+    border-style: 20px solid white;
+}
+
+.main a{
+   text-decoration: none;
+   color: white;
+}
+
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    left:50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 12px;
+
+}
+
+
+
+@media (max-width:375px) {
+
+    
+
+    .dropbtn{
+        display: flex;
+        justify-content: flex-end;
+        cursor: pointer;
+       
+    }
+    .dropbtn-close{
+        display: none;
+        position: absolute;
+        top:0;
+        right: 0;
+       
+        z-index: 2;
+    }
+
+    
+    .nav-menu-item{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        height: 100vh;
+        width: 100%;
+        
+        background-color: #181719;
+        transform: translate(-50%,-50%);
+        display:none;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        z-index: 3;
+      
+    }
+
+    .navmenu:hover .nav-menu-item  {
+        display:flex;
+      }
+
+      .navmenu:hover .dropbtn {
+        display:none;
+      }
+      .navmenu:hover .dropbtn-close {
+        display:flex;
+      }
+      .dropbtn-close:hover + div{
+        display: none;
+
+      }
+    
+
+      .main{
+         margin:0 12px;
+        
+        
+        
+        display: flex;
+        flex-direction: column;
+       
+        
+    }
+
+    h1{
+        margin:16px 0;
+    }
+
+    p, .button{
+        margin-bottom: 16px;
+    }
+
+    .main a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .card{
+
+  
+       
+        bottom:-45%;
+       
+    }
+   
+    .footer{
+        letter-spacing: 0.2px;
+        font-size: 8px;
+        font-weight: 700;
+    }
+
+    
+    
+   
+}
